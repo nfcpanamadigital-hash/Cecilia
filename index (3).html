@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cecilia Tejada | AMBIENTAR</title>
+
+  <style>
+    @font-face {
+      font-family: "Balgin Ambientar";
+      src: url("assets/Fontspring-DEMO-balgin-bold.otf") format("opentype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --charcoal: #282a28;
+      --sage: #90b488;
+      --olive: #698453;
+      --stone: #bcb5ac;
+      --mist: #d9d9d9;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 14px;
+      background:
+        radial-gradient(circle at top, rgba(144, 180, 136, 0.35), transparent 36%),
+        linear-gradient(180deg, #f1eee8 0%, var(--stone) 100%);
+      color: var(--charcoal);
+      font-family: Avenir, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 390px;
+      padding: 30px 22px 24px;
+      border-radius: 30px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(40, 42, 40, 0.12);
+      box-shadow: 0 28px 70px rgba(40, 42, 40, 0.24);
+      backdrop-filter: blur(8px);
+    }
+
+    .photo-wrap {
+      width: 142px;
+      height: 142px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      padding: 6px;
+      background: linear-gradient(145deg, var(--sage), var(--olive));
+      box-shadow: 0 14px 30px rgba(40, 42, 40, 0.24);
+    }
+
+    .profile-photo {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 50%;
+      border: 4px solid #f4f0ea;
+      background: var(--stone);
+    }
+
+    h1 {
+      margin: 4px 0 6px;
+      font-family: "Balgin Ambientar", Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1.05;
+      letter-spacing: 0.02em;
+      color: var(--charcoal);
+    }
+
+    .subtitle {
+      margin: 0 0 4px;
+      font-size: 15px;
+      color: var(--olive);
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .role {
+      margin: 0 0 22px;
+      font-size: 14px;
+      line-height: 1.45;
+      color: rgba(40, 42, 40, 0.78);
+    }
+
+    .btn {
+      width: 88%;
+      min-height: 48px;
+      margin: 11px auto;
+      padding: 13px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(105, 132, 83, 0.45);
+      background: rgba(255, 255, 255, 0.68);
+      color: var(--charcoal);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      background: rgba(255, 255, 255, 0.92);
+      box-shadow: 0 10px 22px rgba(40, 42, 40, 0.16);
+    }
+
+    .btn.primary {
+      background: var(--olive);
+      color: var(--white);
+      border-color: var(--olive);
+    }
+
+    .btn.whatsapp {
+      background: var(--sage);
+      color: var(--charcoal);
+      border-color: var(--sage);
+    }
+
+    .btn img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      display: block;
+      flex: 0 0 auto;
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 12px;
+      color: rgba(40, 42, 40, 0.62);
+    }
+
+    .footer a {
+      color: var(--olive);
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+    <div class="photo-wrap">
+      <img id="profilePhoto" class="profile-photo" src="assets/Cecy1.jpeg" alt="Cecilia Tejada" />
+    </div>
+
+    <h1>Cecilia Tejada</h1>
+    <p class="subtitle">AMBIENTAR</p>
+    <p class="role">Architecture & Sustainable Project Design</p>
+
+    <a class="btn primary" href="assets/Cecilia_Tejada.vcf" download>
+      <img src="assets/user_icon.png" alt="" />
+      <span>Save Contact</span>
+    </a>
+
+    <a class="btn" href="tel:+50766029004">
+      <img src="assets/call_icon.jpg" alt="" />
+      <span>Call</span>
+    </a>
+
+    <a class="btn whatsapp" href="https://wa.me/50766029004" target="_blank" rel="noopener">
+      <img src="assets/whatsapp_icon.png" alt="" />
+      <span>WhatsApp</span>
+    </a>
+
+    <a class="btn" href="mailto:ambientar.pty@gmail.com">
+      <img src="assets/Gmail_logo.png" alt="" />
+      <span>Email</span>
+    </a>
+
+    <a class="btn" href="https://ambientar-website.vercel.app/" target="_blank" rel="noopener">
+      <img src="assets/website_log.png" alt="" />
+      <span>Website</span>
+    </a>
+
+    <a class="btn" href="https://www.linkedin.com/in/cecilia-tejada-00a6652a4/" target="_blank" rel="noopener">
+      <img src="assets/Linkedin_logo.png" alt="" />
+      <span>LinkedIn</span>
+    </a>
+
+    <div class="footer">
+      <a href="https://wa.me/50767317853" target="_blank" rel="noopener">Powered by Digital Cards Panama</a>
+    </div>
+  </main>
+
+  <script>
+    const profilePhotos = [
+      "assets/Cecy1.jpeg",
+      "assets/Cecy2.jpeg",
+      "assets/Cecy3.jpeg"
+    ];
+
+    const selectedPhoto = profilePhotos[Math.floor(Math.random() * profilePhotos.length)];
+    document.getElementById("profilePhoto").src = selectedPhoto;
+  </script>
+</body>
+</html>
